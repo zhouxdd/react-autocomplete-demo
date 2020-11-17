@@ -64,15 +64,22 @@
   font-size: 80%;
 }
 
-.shortCode {
+.itemNameDisplace {
   background-color: #4696ec;
   color: #fff;
   padding: 4px;
   border-radius: 2px;
 }
 
+.itemPriceDisplace {
+  background-color: #96ec46;
+  color: #fff;
+  padding: 4px;
+  border-radius: 2px;
+}
+
 .highlight {
-  background-color: yellow; 
+  background-color: yellow;
   padding: 4px;
   border-radius: 2px;
 }
