@@ -58,20 +58,12 @@
     }'
     ```
   6. Ingest data
-    ```
+  
     curl -H "Content-Type: application/json" -XPOST "localhost:9200/test/_bulk?pretty&refresh" --data-binary "@partaa"
     curl -H "Content-Type: application/json" -XPOST "localhost:9200/test/_bulk?pretty&refresh" --data-binary "@partab"
     curl -H "Content-Type: application/json" -XPOST "localhost:9200/test/_bulk?pretty&refresh" --data-binary "@partac"
-    curl -H "Content-Type: application/json" -XPOST "localhost:9200/test/_bulk?pretty&refresh" --data-binary "@partad"
-    curl -H "Content-Type: application/json" -XPOST "localhost:9200/test/_bulk?pretty&refresh" --data-binary "@partae"
-    curl -H "Content-Type: application/json" -XPOST "localhost:9200/test/_bulk?pretty&refresh" --data-binary "@partaf"
-    curl -H "Content-Type: application/json" -XPOST "localhost:9200/test/_bulk?pretty&refresh" --data-binary "@partag"
-    curl -H "Content-Type: application/json" -XPOST "localhost:9200/test/_bulk?pretty&refresh" --data-binary "@partah"
-    curl -H "Content-Type: application/json" -XPOST "localhost:9200/test/_bulk?pretty&refresh" --data-binary "@partai"
-    curl -H "Content-Type: application/json" -XPOST "localhost:9200/test/_bulk?pretty&refresh" --data-binary "@partaj"
-    curl -H "Content-Type: application/json" -XPOST "localhost:9200/test/_bulk?pretty&refresh" --data-binary "@partak"
-    curl -H "Content-Type: application/json" -XPOST "localhost:9200/test/_bulk?pretty&refresh" --data-binary "@partal"
-    ```
+    
+   
 
 7. Check index status
     curl -X GET "localhost:9200/_cat/indices/test?pri&v&h=health,index,pri,rep,docs.count,mt&pretty"
