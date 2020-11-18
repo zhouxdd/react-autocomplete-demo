@@ -64,10 +64,13 @@
     curl -H "Content-Type: application/json" -XPOST "localhost:9200/test/_bulk?pretty&refresh" --data-binary "@partac"
     ```
 7. Check index status
-    curl -X GET "localhost:9200/_cat/indices/test?pri&v&h=health,index,pri,rep,docs.count,mt&pretty"
+
+   `curl -X GET "localhost:9200/_cat/indices/test?pri&v&h=health,index,pri,rep,docs.count,mt&pretty"`
 
 8. Launch a browser with no cors
-
+   `--user-data-dir` can be any directory
+   `/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security --user-data-dir="./chrome_dev"`
+   
 9. install react and launch app
   `yarn`
   `yarn start`
